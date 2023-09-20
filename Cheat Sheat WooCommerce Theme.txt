@@ -1,0 +1,65 @@
+1. Install WooCommerce Plugin:
+    > set up simple normal theme (enqu JS, CSS Files etc).
+    > Install WooComm Plugin - Optional wether to config Store Setup right after activating WooCommerce.
+    > Verify The necessary Pages are Published and Also Added in Nav Menu.
+    > Add Dummy / Sample CSV Products from WooCommerce Plugin Folder.
+
+2. Adding WooCommerce Support Functionality into Theme.
+    > Make WooComm Plugin Compatible with Theme by addin a Function in Functions.PHP Add_Theme_Support. So that Theme Will Use WooCommerce's Template Pages like archive-Product.php single-Product.php etc.
+    > Add Some 4 Theme_Support functions for Product Page to add funcationit of Product ZOOM, Slide, and LightBox etc.
+
+3. Editing Or Modifying WooCommerce Template Files: (archive-product.php Main SHOP Page)
+    > WooCommerce Template Pages can Be Modified in FUNCTIONS.PHP File But its Best practice to Make sepeate File and Include it through REQUIRE Method because You'll have All the WooCommerce related modifications in a single File for Tracking Changes.
+
+    > Two Methods To WooCommerce Template Modification: 
+        i. by using Template Override.(Not Recommended)
+        ii. by using Action & Filter Hooks.
+    
+    i> Method One:
+        > Create a Folder with Same Name as Plugin(woocommerce) in Theme Root and paste the Files That U want to Override.
+        > Verify it Through SHOW CURRENT TEMPLATE Hierarchy. Now Edit it Accordingly.
+        > Your WooCommerce Should Be Connected/Added in Theme through Add_Theme_Support.
+        > This (OVERRIDE) Method is NOT RECOMMENDED as Updating Theme Or Plugin will Delete All Overrided Changes.
+    ii> Methodr Two:
+        > Mostly Used Method. > Not required any files to Modify Or edit.
+        > Use Hooks and Filters to Update the Layout or design of Page.
+        > Use SIMPLE SHOW HOOKS plugin to find Hooks Locations and Priority  to Update Accordingly.
+    iii> FILTERTS also used for Modifying any Functionality.It always RETURN a value.
+
+4. Modifying Single Product Page:
+
+5. Modifying The Cart Page:
+    > Set the design, Layout etc of the Cart Page.
+
+6. Modifying The Checkout Page:
+    > Set the design, Layout etc of the Cart Page.
+    > Integrate Payment Method to Verify CHECKOUT PROCESS Functionality.
+
+7. Modifying Or Review My Account Page.
+
+8. Setup SHOP Search FORM .
+> This Should Load Search results of archive-product.php in Search results..
+
+9. Seting Up Slider of Products:
+    > can be used through a Plugin, Advanced Custom Field (ACF), or Customizer(With For Loop.)etc.
+
+10. Displaying or Adding Products Through Shortcode on The Page. (WooCommerce Documentation).
+
+11. Create Necessary Pages ( Single.php, Search Page, Archive, 404 Error Page).
+
+12. Comment Form, Pagination etc.
+
+13. Register Template Parts. 
+
+14. Sidebars Widgets, and Displaying it on Specific Area Location.
+    > Register Sidebar HOOK in Functions.php ( Widgets_init (). )
+    > Create Sidebar.PHP 
+    > Create HTML Markup in a Page to Display The Widgets.
+    > Widgets Sidebar Mostly used in Blog Page, Single, and Archive Page Template etc.
+    > Not Used in Home or Page.PHP
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+
+My Step By Step WordPress Theme Development Checklist:
+
+
+1. Configure Local Development Environment:
+    a.	Set Up LOCAL by FlyWheel.
+    b.	Install & Set Up WordPress.
+    c.	Configure VS Code + Extensions.
+
+ 
+2. Basic WordPress Theme Structure:
+    a.	Create The Theme with _UnderScore.com
+    b.	Setup Style.CSS
+    c.  Add Theme Support Functions that muste be included in Function while 
+        Theme Development. So add these following function at Strart before working on Development of new Theme.
+        {
+        add_theme_support('title_tag');
+        add_theme_support('post_thumbnails');
+        add_theme_support('post_formats', ['aside','gallery','link','status','video','audio','image','quote','chat']);
+        add_theme_support('html5');
+        add_theme_support('automatic_feed_links');
+        add_theme_support('custom-logo');
+        add_theme_support('custom-header');
+        add_theme_support('custom-background');
+        add_theme_support('starter-content');
+        }
+        /////////////////////////////////////////////////////////////////////////
+    d.	Enqueue or Link required Scripts.(Functions. CSS, JavaScript, Font-Awesome,). add_action HOOK.
+    e. set up Header and Footer .php files with Functions-> wp_head() & wp_footer() .
+    f. Complete Fully Responsive Structure before Working on Content/ Header/SideBars etc.
+    	
+    g. Create/Add Navigation Menus(Register_Nav_Menus) in Functions.php(Header/Footer Menu). //Register_nav_Menu();
+    Register The Menu fist in Functions.php and then define it in Header.php to display on website.
+    h. Create/ Register SideBar for Widget Areas in Functions.php
+    i.	
+
+3.Advanced Functions For Building Theme Main Content Page: Working With Loop
+    a. The WordPress Loop. Get_Post Function in Index.php
+    b. Check Template Hierarchy.
+    c. Template_Part Folder.
+    d. Confirm Custom Pages. (Page Templates ).
+    e. Comments.PHP Impot from TwentySeventeen Theme. 
+    f.	WP Loop(Default Loop) VS WP Query Loop(Custom Loop).
+
+4. Create Inner Pages:
+    a.	Permalinks of Theme Links.
+    b.	Single Post Template.
+    c.	Add Comments Section in Single Posts.
+    d.	Add Search Functionality in Theme.
+    e.	Add Pagination in Blog Page, Search Page and Single Post Page.
+    f.	Configure One Archive Page for Categories, Tags and Authors etc.
+    g.	Create & Design 404 Page for Broken Link Pages.
+    h.	The Widget Function for 404 Page.
+    i.	The Template_Part() Function.
+    j.	Conditional Tags for Header Menu Showing, Landing Page etc.
+    k.	WP_Body_Open() Function for Integrating Tools Like Google Analytics, Adsense, GTM, and Google Search Console etc.
+
+
+5. WordPress HOOKS (Most Important).
+
+
+6. 
+
+
+
+
+Page Templates:
+
+Index.php
+
+Singular.php
+
+Single.php
+
+Home.php
+
+
